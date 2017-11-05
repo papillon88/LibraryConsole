@@ -19,7 +19,7 @@ Enter all the mandatory field values for the -ISBN,Branch ID & Card # to be able
 
 **Steps to build and run the webapp :**
 
-1) Download the code or import  it into a java IDE. Then do a build. If this is the first time building, internet connection is needed.
+1) Download the code or import  it into a java IDE. Then do a build. If this is the first time building, internet connection is needed to download the dependencies.
 2) Artifact LibraryConsole.war will be created. Copy this onto your desktop(windows) or some location(unix/mac)
 3) Then get the fully qualified path to the file. example : C:\workspace\LibraryConsole\build\libs\LibraryConsole.war
 4) Run this file using the following command : java -jar C:\workspace\LibraryConsole\build\libs\LibraryConsole.war
