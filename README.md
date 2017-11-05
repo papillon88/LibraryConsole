@@ -4,17 +4,17 @@ This is a functional library management GUI web app made using html,css,angularJ
 
 **Following functions can be performed on this web app :**
 
--Search window - To search for a book enter either ISBN  ,Book Title or Author then click on Submit button. Results will show the number of copies available for that book in different branches.
+- Search window - To search for a book enter either ISBN  ,Book Title or Author then click on Submit button. Results will show the number of copies available for that book in different branches.
 
--Checkin  window - In order to check in a book enter either ISBN  ,Card_no or Borrower name then click on Submit button.
+- Checkin  window - In order to check in a book enter either ISBN  ,Card_no or Borrower name then click on Submit button.
 Click on the left side of the panel to select the record that needs to be checked in and click on Checkin button.
 Enter all the mandatory field values for the -ISBN,Branch ID & Card # to be able to search a record.Click on the left side of the displayed result  to select the particular record after that click on Checkout button to checkout that book from the system.
 
--Checkout  window - Enter all the mandatory field values for the -ISBN,Branch ID & Card # to be able to search a record.Click on the left side of the displayed result  to select the particular record after that click on Checkout button to checkout that book from the system.
+- Checkout  window - Enter all the mandatory field values for the -ISBN,Branch ID & Card # to be able to search a record.Click on the left side of the displayed result  to select the particular record after that click on Checkout button to checkout that book from the system.
 
--Add borrower window - In order to add a Borrower add all the mandatory fields values for First Name ,Last Name ,SSN & Address then click on Add Borrower to add a new Borrower to the System.
+- Add borrower window - In order to add a Borrower add all the mandatory fields values for First Name ,Last Name ,SSN & Address then click on Add Borrower to add a new Borrower to the System.
 
--Fines window - Enter the Borrowerd’s Card# and the fine Amount in order to pay the fines on that card. Click on search button. Click on the left side of the displayed result  to select the particular record after that click on Pay button to submit the fine.
+- Fines window - Enter the Borrowerd’s Card# and the fine Amount in order to pay the fines on that card. Click on search button. Click on the left side of the displayed result  to select the particular record after that click on Pay button to submit the fine.
 
 
 **Steps to build and run the webapp :**
