@@ -1,0 +1,35 @@
+buildscript{
+	repositories {
+    	mavenCentral()
+	}
+	dependencies {
+    	classpath('org.springframework.boot:spring-boot-gradle-plugin:1.3.2.RELEASE')
+	}
+}
+
+apply plugin: 'spring-boot'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+
+version = ""
+eclipse {
+    wtp {
+    	component {contextPath='library'}
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    //compile 'org.springframework.boot:spring-boot-devtools'
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    compile files ("src/main/webapp/WEB-INF/lib/sqljdbc42.jar")
+}

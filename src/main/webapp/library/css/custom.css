@@ -1,0 +1,22 @@
+.myGrid {
+    width: 500px;
+    height: 250px;
+  }
+.page-header{
+	/* background-image: url('images/color.jpg'); */
+	background-color: #577492;
+	color: #D4D8D1;
+}
+.glyphicon{
+	font-size: 30px;
+}
+.tab-content {
+    margin-top: 20px;
+    padding: 20px;
+    background: grey;
+    border-bottom: 1px solid #DDDDDD;
+border-left: 1px solid #DDDDDD;
+border-right: 1px solid #DDDDDD;
+display: block;
+margin-top: 0px;
+}

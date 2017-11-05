@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app='mainapp'>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="styleSheet" href="css/ui-grid.min.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/ui-grid.min.js"></script>  
+<script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body data-ng-controller='searchcontrol'>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">UTD Library Console</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="ahome.html">Home</a></li>
+      <li class="active"><a href="bsearch.html">Search</a></li>
+      <li><a href="ccheckin.html">Check In</a></li>
+      <li><a href="dcheckout.html">Check Out</a></li>
+      <li><a href="eaddborrower.html">Add Borrower</a></li>
+      <li><a href="ffines.html">Fines</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-md-2">
+  	<label>ISBN</label><br>
+    <input type="text" data-ng-model="isbn" class="form-control" placeholder="Enter valid ISBN">
+  </div>
+  <div class="col-md-3">
+  	<label>Book Title</label><br>
+    <input type="text" data-ng-model="title" class="form-control" placeholder="Enter valid Book Title">
+  </div>
+  <div class="col-md-3">
+  	<label>Author</label><br>
+    <input type="text" data-ng-model="author" class="form-control" placeholder="Enter valid author name">
+  </div>
+  <div class="col-md-2">
+  	<br><button type="button" class="btn btn-primary" data-ng-click="submit()">Submit</button>
+  <!-- <button type="button" class="btn btn-primary" data-ng-click="display()">Display</button> -->
+  </div>
+  
+</div>
+</div>
+
+<br><br>
+
+<div data-ui-grid="gridOptions" data-ui-grid-selection data-ui-grid-resize-columns class="myGrid"></div>
+
+<!-- <div data-ng-repeat="line in datatablesinjson track by $index">
+{{line}}
+</div> -->
+
+
+<!-- <div class = "page-header container-fluid">
+   <h1>
+     UTD Library Console
+   </h1>
+   
+</div>
+
+
+<div id="about" class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+<ul class="nav nav-pills nav-justified">
+<li class="active"><a data-toggle="pill" href="#menu0"><i class="glyphicon glyphicon-home"></i></a></li>
+<li><a data-toggle="pill" href="#menu1"><i class="glyphicon glyphicon-search"></i></a></li>
+<li><a data-toggle="pill" href="#menu2"><i class="glyphicon glyphicon-download"></i></a></li>
+<li><a data-toggle="pill" href="#menu3"><i class="glyphicon glyphicon-upload"></i></a></li>
+<li><a data-toggle="pill" href="#menu4"><i class="glyphicon glyphicon-user"></i></a></li>
+</ul>
+
+<div class="tab-content fill">
+<div id="menu0" class="tab-pane active">
+</div>
+<div id="menu1" class="tab-pane">
+<h3>HOME</h3>
+<p>Some content</p>
+</div>
+<div id="menu2" class="tab-pane">
+<button type="button" class="btn btn-primary" data-ng-click="submit()">Submit</button>
+<div data-ng-repeat="line in datatablesinjson track by $index">
+{{line}}
+</div>
+</div>
+<div id="menu3" class="tab-pane">
+<h3>HOME</h3>
+<p>Some content</p>
+</div>
+<div id="menu4" class="tab-pane">
+<h3>HOME</h3>
+<p>Some content</p>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
+</div> -->
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app='mainapp'>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="styleSheet" href="css/ui-grid.min.css"/>
+<style>
+.glyphicon {
+    font-size: 50px;
+}
+#services{
+	margin-top : 60px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="js/ui-grid.min.js"></script>  
+<script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">UTD Library Console</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="ahome.html">Home</a></li>
+      <li><a href="bsearch.html">Search</a></li>
+      <li><a href="ccheckin.html">Check In</a></li>
+      <li><a href="dcheckout.html">Check Out</a></li>
+      <li><a href="eaddborrower.html">Add Borrower</a></li>
+      <li><a href="ffines.html">Fines</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="services" class="container-fluid text-center">
+<h2 style="font-family: courier;">This project is built using the following technologies</h2>
+  <br><br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>Spring BOOT</h4><p>Used for server container and startup</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Angular JS</h4><p>Used for dynamic binding with models</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-align-justify"></span>
+      <h4>SQL Server</h4><p>Used for SQL Tables implementations</p>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fire"></span>
+      <h4>Java</h4><p>Used for interfacing Angular with SQL</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-blackboard"></span>
+      <h4>Chrome Dev Con</h4><p>Used for debugging on frontend</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>Eclipse IDE</h4><p>Developed entire app using this platform</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
